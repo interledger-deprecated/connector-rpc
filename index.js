@@ -28,7 +28,7 @@ router.post('/rpc', async (ctx) => {
 })
 
 app
-  .use(parser())
+  .use(parser)
   .use(router.routes())
   .use(router.allowedMethods())
   .listen(port)
